@@ -9,7 +9,7 @@ body {
   padding: 19px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .9fr 10fr 2fr 1fr;
+  grid-template-rows: .9fr 10fr 2fr .2fr;
   grid-template-areas:
     "logo links"
     "main main"
@@ -17,22 +17,12 @@ body {
     "footer footer";
 }
 
-.blog--logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  grid-area: logo;
-  color: #e60005;
-  margin-bottom: 7px;
-}
-.blog--logo-text {
-  color: #000000;
-  text-decoration: none;
-}
+.blog--topics-layout {
 
+}
 main {
   grid-area: main;
-  border-top: 1px solid grey;
+  border-top: 1px solid #485864;
 }
 
 aside {
@@ -41,6 +31,8 @@ aside {
 
 footer {
   grid-area: footer;
+  border-top: 1px solid #485864;
+  padding-top: 8px;
 }
 
 /* blog post cards */

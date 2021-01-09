@@ -22,3 +22,16 @@ nav ul a p:hover {
   font-weight: 700;
   transition: ease-in-out .1s;
 }
+
+.blog--logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: logo;
+  color: #e60005;
+  margin-bottom: 7px;
+}
+.blog--logo-text {
+  color: #000000;
+  text-decoration: none;
+}
