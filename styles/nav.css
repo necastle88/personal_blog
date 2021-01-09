@@ -1,0 +1,24 @@
+nav {
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a p:hover {
+  color: #e60005;
+  font-weight: 700;
+  transition: ease-in-out .1s;
+}

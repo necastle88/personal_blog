@@ -1,0 +1,83 @@
+@import url("typography.css");
+@import url("nav.css");
+
+body {
+  margin: 0;
+}
+
+.index-layout {
+  padding: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .9fr 10fr 2fr 1fr;
+  grid-template-areas:
+    "logo links"
+    "main main"
+    "subscribe subscribe"
+    "footer footer";
+}
+
+.blog--logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: logo;
+  color: #e60005;
+  margin-bottom: 7px;
+}
+.blog--logo-text {
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+  border-top: 1px solid grey;
+}
+
+aside {
+  grid-area: subscribe;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* blog post cards */
+.blog--post-container {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "media media"
+  "text text"
+  "buttons social";
+  height: 300px;
+  width: 100%;
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border: 0px solid #000000;
+  -moz-box-shadow: 0px 1px 5px -0.5px rgba(26,26,26,1);
+  box-shadow: 0px 1px 5px -0.5px rgba(26,26,26,1);
+}
+
+.blog--card-media {
+  grid-area: media;
+  border-style: solid;
+}
+
+.blog--card-text {
+  grid-area: text;
+  border-style: solid;
+}
+
+.blog--card-buttons {
+  grid-area: buttons;
+  border-style: solid;
+}
+
+.blog--card-icons {
+  grid-area: social;
+  border-style: solid;
+}
+/* blog post cards end*/
