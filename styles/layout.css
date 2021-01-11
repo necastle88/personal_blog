@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+main {
+  grid-area: main;
+  border-top: 1px solid #485864;
+}
+
+aside {
+  grid-area: subscribe;
+  padding: 10px 0 15px 0;
+}
+
+footer {
+  grid-area: footer;
+  border-top: 1px solid #485864;
+  padding-top: 8px;
+}
+
+.index-layout {
+  padding: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .4fr 5fr 2fr .2fr;
+  grid-template-areas:
+    "logo links"
+    "main main"
+    "subscribe subscribe"
+    "footer footer";
+}
+
+.blog__topics-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+

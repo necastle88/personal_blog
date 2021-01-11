@@ -1,93 +1,56 @@
 @import url("typography.css");
 @import url("nav.css");
+@import url("layout.css");
 
-body {
-  margin: 0;
-}
-
-.index-layout {
-  padding: 19px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .9fr 10fr 2fr .2fr;
-  grid-template-areas:
-    "logo links"
-    "main main"
-    "subscribe subscribe"
-    "footer footer";
-}
-
-.blog--topics-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-}
-
-.blog--topics-container {
+.blog__topics-container {
   border-bottom: 1px solid #485864;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   padding-top: 15px;
 }
 
-.blog--topics-container:hover {
-  color: #fff;
-  background-color: #e60005;
-  font-weight: 700;
-  transition: background-color ease-in-out .5s;
-  padding-left: 13px;
+.subtitle-light {
+  padding-top: 10px;
 }
 
-main {
-  grid-area: main;
-  border-top: 1px solid #485864;
+form.form__name-input {
+  padding: 20px 0;
 }
 
-aside {
-  grid-area: subscribe;
-}
-
-footer {
-  grid-area: footer;
-  border-top: 1px solid #485864;
-  padding-top: 8px;
-}
-
-/* blog post cards */
-.blog--post-container {
-  display: grid;
-  grid-template-rows: 3fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "media media"
-  "text text"
-  "buttons social";
-  height: 300px;
+input[type="text"] {
   width: 100%;
-  border-radius: 4px 4px 4px 4px;
-  -moz-border-radius: 4px 4px 4px 4px;
-  border: 0px solid #000000;
-  -moz-box-shadow: 0px 1px 5px -0.5px rgba(26,26,26,1);
-  box-shadow: 0px 1px 5px -0.5px rgba(26,26,26,1);
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.blog--card-media {
-  grid-area: media;
-  border-style: solid;
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.blog--card-text {
-  grid-area: text;
-  border-style: solid;
+input[type=submit] {
+  width: 100%;
+  background-color: #e60005;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
-.blog--card-buttons {
-  grid-area: buttons;
-  border-style: solid;
+input[type=submit]:hover {
+  background-color:#2c2c2c;
+  transition: background-color ease-in .1s;
 }
-
-.blog--card-icons {
-  grid-area: social;
-  border-style: solid;
-}
-/* blog post cards end*/

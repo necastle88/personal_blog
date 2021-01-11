@@ -23,15 +23,14 @@ nav ul a p:hover {
   transition: ease-in-out .1s;
 }
 
-.blog--logo {
+.blog__logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   grid-area: logo;
   color: #e60005;
-  margin-bottom: 7px;
 }
-.blog--logo-text {
+.blog__logo-text {
   color: #000000;
   text-decoration: none;
 }
