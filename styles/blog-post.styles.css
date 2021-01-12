@@ -1,0 +1,83 @@
+@import url("typography.css");
+@import url("nav.css");
+
+/* BLOG POST LAYOUT START */
+
+body {
+  margin: 0;
+}
+
+main {
+  grid-area: main;
+  border-top: 1px solid #485864;
+}
+
+aside {
+  grid-area: subscribe;
+  padding: 10px 0 15px 0;
+}
+
+footer {
+  grid-area: footer;
+  border-top: 1px solid #485864;
+  padding-top: 8px;
+}
+
+.post-layout {
+  padding: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .2fr 3fr 0.2fr;
+  grid-template-areas:
+      "logo links"
+      "main main"
+      "footer footer";
+}
+
+main.blog__content-layout {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.blog__post-layout {
+  display: grid;
+}
+/* BLOG POST LAYOUT END */
+
+/* BLOG POST IMAGE START */
+.motivation-blog-image__container {
+  margin: 8% 0 5%;
+}
+
+img.motivation-blog-image {
+  width: 100%;
+}
+/* BLOG POST IMAGE END */
+
+/* BLOG POST COPY START */
+.blog-post__author-date {
+  margin-top: .8em;
+}
+
+.blog-post__author {
+  margin-bottom: 1em;
+}
+/* BLOG POST COPY END */
+
+/* SOCIAL ICON STYLES START */
+.blog__post-social-icons {
+  margin: 3% 0;
+}
+
+.social-icon-heart {
+  height: 20px;
+  cursor: pointer;
+}
+
+.social-icon-share {
+  height: 20px;
+  cursor: pointer;
+  margin: 0px 16px;
+}
+/* SOCIAL ICON STYLES END */

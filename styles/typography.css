@@ -27,6 +27,8 @@ h4 {
   font-size: 2.125rem;
   font-weight: 400;
   letter-spacing: .25;
+  margin: 0;
+  color: #e60005;
 }
 
 h5 {
@@ -87,6 +89,14 @@ button {
 }
 
 caption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.4;
+  font-weight: 400;
+  color: #36454f;
+}
+
+figcaption {
   font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;
   letter-spacing: 0.4;
