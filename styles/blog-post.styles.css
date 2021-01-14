@@ -82,14 +82,27 @@ img.motivation-blog-image {
 }
 /* SOCIAL ICON STYLES END */
 
-@media(max-width: 320px) {
-
-}
-
 @media(min-width: 600px) and (max-width: 900px) {
-
+  .motivation-blog-image__container {
+    margin: 5% 0 5%;
+  }
 }
 
 @media(min-width: 901px) {
+  .post-layout {
+    padding: 19px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .28fr 6fr 0.1fr;
+    grid-template-areas:
+        "logo links"
+        "main main"
+        "footer footer";
+    width: 800px;
+    margin: auto;
+  }
 
+  .motivation-blog-image__container {
+    margin: 5% 0 5%;
+  }
 }
