@@ -44,14 +44,4 @@ nav ul a p:hover {
 }
 
 @media(min-width: 901px) {
-  padding: 19px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .14fr 6fr 0.1fr;
-  grid-template-areas:
-      "logo links"
-      "main main"
-      "footer footer";
-  width: 800px;
-  margin: auto;
-}
+ 
