@@ -34,3 +34,15 @@ nav ul a p:hover {
   color: #000000;
   text-decoration: none;
 }
+
+@media(max-width: 320px) {
+
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+
+}
+
+@media(min-width: 901px) {
+
+}
