@@ -23,6 +23,10 @@ footer {
   padding-top: 8px;
 }
 
+figure {
+  margin: 0;
+}
+
 .post-layout {
   padding: 19px;
   display: grid;
@@ -70,17 +74,39 @@ img.motivation-blog-image {
   margin: 3% 0;
 }
 
-.social-icon-heart {
+.social-icon-heart, 
+.social-icon-facebook {
   height: 20px;
   cursor: pointer;
+  margin-right: 16px;
 }
 
 .social-icon-share {
   height: 20px;
   cursor: pointer;
-  margin: 0px 16px;
 }
 /* SOCIAL ICON STYLES END */
+
+/* AUTHOR INFO START*/
+span.blog-post__author-content-container {
+  display: flex;
+  margin: 10px 12px 10px 0;
+  align-items: center;
+}
+
+span.blog-post__author-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
+.avatar {
+  vertical-align: middle;
+  width: 40x;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* AUTHOR INFO END*/
 
 @media(min-width: 600px) and (max-width: 900px) {
   .motivation-blog-image__container {

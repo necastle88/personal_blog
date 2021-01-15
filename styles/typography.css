@@ -88,14 +88,6 @@ button {
   text-transform: uppercase;
 }
 
-caption {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.4;
-  font-weight: 400;
-  color: #36454f;
-}
-
 figcaption {
   font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;

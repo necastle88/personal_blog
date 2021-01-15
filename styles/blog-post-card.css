@@ -23,6 +23,10 @@ footer {
   padding-top: 8px;
 }
 
+figure {
+  margin: 0;
+}
+
 .posts__card-layout {
   padding: 19px;
   display: grid;

@@ -14,7 +14,6 @@ aside {
 
 footer {
   grid-area: footer;
-  border-top: 1px solid #485864;
   padding-top: 8px;
 }
 
@@ -53,8 +52,13 @@ footer {
   .form__name-input {
     margin: 6px 20px;
  }
+ 
  aside {
   grid-area: subscribe;
   padding: 0;
+ }
+
+ figure {
+  margin: 0;
  }
 }
